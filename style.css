@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Raleway, sans-serif;
+}
+
+body {
+  background-color: hsl(229, 57%, 11%);
+  background-image: url('images/bg-desktop.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 980px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-box {
+  padding: 10px;
+  width: 35%;
+  height: 60%;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 10px 100px 10px 10px;
+}
+
+button {
+  background: transparent;
+  border: 0;
+}
+
+button:focus {
+  outline: none;
+  border: 0;
+}
+
+.main-box button {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.options {
+  margin-top: 10px;
+}
+
+.options button {
+  background-color: hsl(229, 57%, 11%);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.information {
+  width: 60%;
+  height: 60%;
+}
+
+.info-box {
+  position: relative;
+  margin-top: 9.5%;
+  width: 100%;
+  height: 70%;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 10px;
+}
