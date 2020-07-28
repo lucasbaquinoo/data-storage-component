@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,33 +8,50 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  
+
   <title>Frontend Mentor | Fylo data storage component</title>
 
 </head>
+
 <body>
-  
-    <div class="main">
-      <div class="box">
-        <div class="main-box">
-          <button><img src="images/logo.svg" alt="Logo"></button>
-          <div class="options">
-            <button><img src="images/icon-document.svg" alt="Document"></button>
+
+  <div class="main">
+    <div class="box">
+      <div class="main-box">
+        <button><img src="images/logo.svg" alt="Logo"></button>
+        <div class="options">
+          <button><img src="images/icon-document.svg" alt="Document"></button>
           <button><img src="images/icon-folder.svg" alt="Path"></button>
           <button><img src="images/icon-upload.svg" alt="Upload"></button>
-          </div>
         </div>
-        <div class="information">
+      </div>
+      <div class="information">
+        <div class="position">
+          <div class="box1 sb8"><p><span id="totalLeft"></span> GB Left</p></div>
           <div class="info-box">
-            <input type="range" name="#" id="#">
-            Em andamento o desenvolvimento!
+            <p>You've used <span id="total"></span> GB of your storage</p>
+
+            <input type="range" min="0" max="1000" value="815" id="slider">
+
+            <div id="selector">
+              <div id="progressBar"></div>
+            </div>
+
+            <div class="text-input">
+              <p>0 GB</p>
+              <p>1000 GB</p>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
+  </div>
+  </div>
 
 
-  
-  
+  <script src="script.js"></script>
+
 </body>
+
 </html>
